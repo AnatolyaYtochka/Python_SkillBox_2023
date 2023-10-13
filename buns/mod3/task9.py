@@ -20,5 +20,5 @@ def makeSteps(n):
         stepForSide += 1
     return str(x) + ' ' + str(y)
 
-n = int(input())
+n = int(open('input.txt').readline())
 print(makeSteps(n))
