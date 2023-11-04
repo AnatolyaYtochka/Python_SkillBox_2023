@@ -3,6 +3,12 @@ class Node:
         self.data = data
         self.next = None
         
+    def __iter__(self):
+        n = self
+        while n:
+            yield n
+            n = n.next
+        
 class LinkedList:
 
     def __init__(self):
