@@ -23,8 +23,7 @@ class Transport():
 
   @speed.setter
   def speed(self, speed):
-    if speed is int and speed >= 0:
-      self.speed = speed
+    self.speed = speed
 
   @property
   def brand(self):
